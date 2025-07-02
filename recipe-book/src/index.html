@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Star Recipe Book</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 5-Star Recipe Book</h1>
+        <p>Discover and share your favorite recipes!</p>
+    </header>
+    <main>
+        <section id="recipe-list">
+            <h2>Recipes</h2>
+            <div class="recipe" data-rating="5">
+                <h3>palak paneer</h3>
+                <img src="images/1.jpg" alt="palak paneer">
+                <div class="stars"></div>
+                <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+            </div>
+            <div class="recipe" data-rating="4">
+                <h3>Chicken Curry</h3>
+                <img src="images/2.jpg" alt="Chicken Curry">
+                <div class="stars"></div>
+                <p>A flavorful dish made with chicken and aromatic spices.</p>
+            </div>
+            <!-- More recipes can be added here -->
+        </section>
+        <section id="add-recipe">
+            <h2>Add Your Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+                <!-- <input type="text" id="recipe-image" placeholder="Image URL" required > -->
+                <textarea id="recipe-description" placeholder="Description" required></textarea>
+                <label for="recipe-rating">Rating:</label>
+                <select id="recipe-rating" required>
+                    <option value="">Select</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 5-Star Recipe Book. All rights reserved.</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
